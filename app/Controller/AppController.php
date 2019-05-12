@@ -31,4 +31,9 @@ App::uses('Controller', 'Controller');
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    //
+    public function out_crosHead(){
+		header('Access-Control-Allow-Origin: *');
+		header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
+    }
 }
